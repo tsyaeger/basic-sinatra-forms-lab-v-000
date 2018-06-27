@@ -7,7 +7,11 @@
  <body>
  
  
-
+  <h1><%=@name%></h1>
+  
+  <%@team.each do |member|%>
+  <h2><%=@member.key%> <%=@member.value%></h2>
+  <%end%>
  
  
  
