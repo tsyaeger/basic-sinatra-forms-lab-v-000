@@ -3,6 +3,13 @@
  <head>
   <meta charset="UTF-8">
   <title>Basketball Team Signup</title>
+  
+  <h1><%=@name%></h1>
+  
+  <%members.each do |member|%>
+  <h2><%=@member.key%> <%=@member.value%></h2>
+  <%end%>
+  
  </head>
  <body>
  </body>
