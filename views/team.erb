@@ -9,8 +9,8 @@
  
   <h1><%=@name%></h1>
   
-  <%@team.each do |member|%>
-  <h2><%=@member.key.to_s%> <%=@member.value%></h2>
+  <%@team.each do |position, member|%>
+  <h2><%=@position.to_s%> <%=@member%></h2>
   <%end%>
  
  
