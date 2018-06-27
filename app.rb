@@ -11,7 +11,7 @@ class App < Sinatra::Base
   post '/team' do
     @name = params[:name]
     puts params
-    # @team = params.reject! { |k| k == :name }
+    @team = params.reject! { |k| k == :name }
     # params.send("#{key}=", value)
     
     erb :team
