@@ -23,7 +23,7 @@ describe App do
     it 'does not return Sinatra error page' do
       visit '/newteam'
 
-      click_button "Submit"
+      click_button "submit"
       expect(page).to_not have_text("Backtrace")
     end
 
