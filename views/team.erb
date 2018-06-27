@@ -10,7 +10,7 @@
   <h1><%=@name%></h1>
   
   <%@team.each do |member|%>
-  <h2><%=@member.key%> <%=@member.value%></h2>
+  <h2><%=@member.key.to_s%> <%=@member.value%></h2>
   <%end%>
  
  
