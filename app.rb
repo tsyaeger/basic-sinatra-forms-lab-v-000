@@ -10,8 +10,9 @@ class App < Sinatra::Base
 
   post '/team' do
     @name = params[:name]
-    
-    params.send("#{key}=", value)
+    @coach = params[:coach]
+    @point
+    # params.send("#{key}=", value)
     
     erb :newteam
   end
